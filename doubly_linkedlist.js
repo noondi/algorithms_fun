@@ -65,13 +65,29 @@ var currentNode = this.head;
 	return null;
 };
 
+// return any given index for a given value
+LinkedList.prototype.indexOf = function(value){
+	var indexes = [];
+	currentIndex = 0;
+	currentNode = this.head;
+	while(currentNode){
+	 if(currentNode.value === value){
+		indexes.push(currentIndex);
+		}
+	currentNode = currentNode.next;
+	currentIndex++;	
+	}
+	return indexes;
+};
+
+
 var ll = new LinkedList();
-ll.AddToHead(1000);
-// ll.addToHead("Hello");
-// ll.addToHead(20);
-// ll.addToTail(3000);
-// ll.add.ToTail("World")
-// ll.addToTail(75);
+ll.addToHead(1000);
+ll.addToHead("Hello");
+ll.addToHead(20);
+ll.addToTail(3000);
+ll.addToTail("World")
+ll.addToTail(75);
 // ll.removeHead();
 // ll.removeTail();
 // console.log(ll.removeHead());
@@ -79,6 +95,7 @@ ll.AddToHead(1000);
 // ll.search("Hello");
 // ll.search(7);
 // console.log(ll.search);
+console.log(ll.indexOf(99));
 
 
 
