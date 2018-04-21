@@ -75,6 +75,7 @@ function printAverage (arr) {
 		console.log(Avrg);
 	}
 }
+printAverage ();
 
 //Given an array, move all values forward (to the left) by one index, dropping
 //the first value and leaving a 0 (zero) at the of the array
@@ -86,6 +87,7 @@ function shiftArrayValsLeft(arr) {
 		arr[arr.length-1] = 0;
 		console.log(arr);
 }
+shiftArrayValsLeft();
 
 //Return the given array, after setting any negative values to zero.
 var myArray = [];
@@ -98,3 +100,4 @@ function ZeroOutNegativeNumbers(arr) {
 		}
 	}
 }
+ZeroOutNegativeNumbers();
