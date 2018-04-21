@@ -66,8 +66,8 @@ var currentNode = this.head;
 };
 
 var ll = new LinkedList();
-ll.AddToHead(1000);
-// ll.addToHead("Hello");
+ll.addToHead(1000);
+ll.addToHead("Hello");
 // ll.addToHead(20);
 // ll.addToTail(3000);
 // ll.add.ToTail("World")
@@ -79,6 +79,7 @@ ll.AddToHead(1000);
 // ll.search("Hello");
 // ll.search(7);
 // console.log(ll.search);
+console.log(ll);
 
 
 
