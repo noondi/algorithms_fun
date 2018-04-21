@@ -8,7 +8,7 @@ function factorial(num){
     } else {
         // recursion case
         // the function that calls itself -  hence RECURSION
-        // it will continue to call itself until the base is satisfied
+        // it will continue to call itself until the base case is satisfied
         return num * factorial(num -1);
     }
 }
